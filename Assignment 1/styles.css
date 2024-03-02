@@ -1,0 +1,14 @@
+.placeholder {
+    border: 10px;
+    border-color: chartreuse;
+}
+
+
+.placeholdersize {
+
+    height: 50%;
+    width: 50%;
+    background-color: blue;
+    display: flex;
+
+}
