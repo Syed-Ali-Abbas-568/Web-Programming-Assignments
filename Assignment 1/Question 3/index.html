@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, 
+    initial-scale=1.0">
+    <title>Job Application Form </title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script defer src="script.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 class="title"> Job Application Form</h1>
+        <form id="form" action="/">
+            <h3 class="subtitle">Personal Information</h3>
+            <div class="inputHolder">
+                <label class="inputLabel">First Name:</label><br>
+                <input type="text" id="fname" name="fname"><br>
+                <div class="error"> </div>
+            </div>
+            <div class="inputHolder">
+                <label class="inputLabel">Last Name:</label><br>
+                <input class="inputStyle" type="text" id="lname" name="lname" value=""><br>
+                <div class="error"></div>
+            </div>
+            <div class="inputHolder">
+                <label class="inputLabel">Phone Number:</label><br>
+                <input pattern="[0-9]{11}" placeholder="Enter 11-digit mobile number" class="inputStyle" type="number"
+                    id="phone" name="phone" value=""><br>
+                <div class="error"> </div>
+            </div>
+            <div class="inputHolder">
+                <label class="inputLabel">Email:</label><br>
+                <input class="inputStyle" type="emai" id="email" name="email" value=""><br>
+                <div class="error"> </div>
+            </div>
+            <div class="inputHolder">
+                <label class="inputLabel">Address:</label><br>
+                <input class="inputStyle" type="text" id="address" name="address" value=""><br>
+                <div class="error"> </div>
+            </div>
+            <h3 class="subtitle">Resume & Cover Letter</h3>
+            <div class="inputHolder">
+                <label class="inputLabel">Resume:</label><br>
+                <input class="inputStyle" type="file" id="resume" name="resume" accept=".pdf" value="">
+                <div class="error"> </div>
+            </div>
+
+
+            <div class="inputHolder">
+                <label class="inputLabel">Cover Letter:</label><br>
+                <textarea id="coverletter" name="coverletter" rows="5" cols="50"
+                    placeholder="Write your cover letter here"></textarea>
+                <div class="error"></div>
+
+            </div>
+
+
+
+
+            <h3 class="subtitle">Education</h3>
+            <div class="inputHolder">
+                <label class="inputLabel">Highest Education Level:</label><br>
+                <input class="inputStyle" type="text" id="HEL" name="HEL"><br>
+                <div class="error"></div>
+            </div>
+
+            <div class="inputHolder">
+                <label class="inputLabel">University/School Name:</label><br>
+                <input class="inputStyle" type="text" id="uname" name="uname"><br>
+                <div class="error"></div>
+            </div>
+            <div class="inputHolder">
+                <label class="inputLabel">Area of Study:</label><br>
+                <input class="inputStyle" type="text" id="aos" name="aos"><br>
+                <div class="error"></div>
+
+            </div>
+            <div class="inputHolder">
+                <label class="inputLabel">Graduation Year:</label><br>
+                <input type="number" min="1900" max="2099" step="1" value="2024" class="inputStyle" type="year"
+                    id="graduationyear" name="graduationyear"><br>
+                <div class="error"></div>
+
+            </div>
+
+
+            <h3 class="subtitle">Previous Job Information</h3>
+            <div class="inputHolder">
+                <label class="inputLabel">Company Name:</label><br>
+                <input class="inputStyle" type="text" id="cname" name="cname" value=""><br>
+                <div class="error"></div>
+
+            </div>
+            <div class="inputHolder">
+                <label class="inputLabel">Employment Start Date:</label><br>
+                <input class="inputStyle" type="date" id="employmentStartDate" name="employmentStartDate">
+                <div class="error"></div>
+
+            </div>
+            <div class="inputHolder">
+                <label class="inputLabel">Employment End Date (if applicable, or leave empty for
+                    present):</label><br>
+                <input class="inputStyle" type="date" id="employmentEndDate" name="employmentEndDate"><br>
+            </div>
+
+
+
+            <div class="inputHolder">
+                <label class="inputLabel">Job Description:</label><br>
+                <textarea id="jobdescription" name="jobdescription" rows="5"
+                    placeholder="Write your job description here" cols="50"></textarea>
+                <div class="error"></div>
+            </div>
+
+
+
+
+            <h3 class="subtitle"> Skills & Certifications</h3>
+            <div class="inputHolder">
+                <label class="inputLabel">List All Relevant Skills:</label><br>
+                <textarea id="skills" name="skills" rows="5" cols="50" placeholder="Enter N/A if no skills"></textarea>
+                <div class="error"></div>
+            </div>
+            <div class="inputHolder">
+                <label class="inputLabel">Certifications:</label><br>
+                <textarea id="certifications" name="certifications" rows="5"
+                    placeholder="Write your certifications if not applicable write N/A" cols="50"></textarea>
+                <div class="error"></div>
+            </div>
+
+
+
+            <h3 class="subtitle">Availablity</h3>
+            <div class="inputHolder">
+                <label class="inputLabel">Willingness to relocate:</label>
+                <div class="option">
+
+                    <div class="inneroptions">
+                        <label>Yes</label>
+                        <input type="radio" id="yesRelocate" name="relocate" value="Yes">
+                        <label>No </label>
+                        <input type="radio" id="noRelocate" name="relocate" value="No"> <br>
+
+                    </div>
+
+                    <div class="error"></div>
+                </div>
+
+            </div>
+
+            <div class="inputHolder">
+                <label class="inputLabel">Available Date:</label><br>
+                <input type="date" id="availableDate" name="availableDate">
+                <div class="error"></div>
+            </div>
+
+
+
+
+            <h3 class="subtitle"> References (Leave blank if not applicable): </h3>
+            <div class="inputHolder">
+                <label class="inputLabel">Reference Name:</label><br>
+                <input class="inputStyle" type="text" id="rname" name="rname"><br>
+                <div class="error"></div>
+            </div>
+
+            <div class="inputHolder">
+                <label class="inputLabel">Reference Phone number:</label><br>
+                <input pattern="[0-9]{11}" placeholder="Enter 11-digit mobile number" class="inputStyle" type="number"
+                    value="" id="rinfo" name="rinfo"><br>
+                <div class="error"></div>
+            </div>
+            <div class="inputHolder">
+                <label class="inputLabel">Relationship With Applicant:</label><br>
+                <input class="inputStyle" type="text" id="relationname" name="relationname"><br>
+                <div class="error"></div>
+            </div>
+
+
+            <h3 class="subtitle">Additional Questions </h3>
+            <div class="inputHolder">
+                <label class="inputLabel">Why do you want to work for this company?</label><br>
+                <textarea id="workreason" name="workreason" rows="5" cols="50"
+                    placeholder=" (Required Question) Write your motivation here: "></textarea>
+                <div class="error"></div>
+
+            </div>
+
+
+
+            <h3 class="subtitle"> Consent & Agreement</h3>
+            <div class="consent option2">
+
+
+                <input type="checkbox" id="agreeTerms" name="agreeTerms">
+                <label for="agreeTerms">Agree to Terms and Conditions</label>
+
+                <input type="checkbox" id="acknowledgePrivacy" name="acknowledgePrivacy">
+                <label for="acknowledgePrivacy">Acknowledge Privacy Policy</label>
+
+                <div class="error"></div>
+            </div>
+
+
+
+            <div class="buttons">
+                <button class="buttonstyle" type="submit">Submit</button>
+                <button class="buttonstyle" onclick="createMultipleTables()">View Job Applications</button>
+            </div>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>
