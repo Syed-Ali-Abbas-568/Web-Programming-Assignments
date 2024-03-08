@@ -1,20 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <title>Your Page Title</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>PeoplePerHour.com</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body style="background-color: rgba(245, 247, 250, 0.98);;">
+<body>
 
-    <div id="top-container-nav" style="background-color: rgba(245, 247, 250, 0.98);">
-        <div class="logo-container">
-            <img id="logo-image" src="smile.png" alt="Logo Picture">
-            <b>people</b>per<b>hour</b>
+    <div class="top-container">
+
+        <div class="nav-holder">
+            <div class="logo-container">
+                <img class="logo" src="logo.svg" alt="Logo" />
+            </div>
+            <nav class="top-nav">
+
+                <div class="half-top-nav-left">
+                    <div class="search-holder">
+
+                        <svg fill="#34A8CA" width="24" height="24" viewBox="0 0 1024 1024">
+                            <path
+                                d="M755.499 695.168l128 128c7.41 7.665 11.977 18.12 11.977 29.641 0 23.564-19.103 42.667-42.667 42.667-11.521 0-21.976-4.567-29.653-11.989l0.012 0.012-128-128c-7.41-7.665-11.977-18.12-11.977-29.641 0-23.564 19.103-42.667 42.667-42.667 11.521 0 21.976 4.567 29.653 11.989l-0.012-0.012zM426.667 85.333c188.513 0 341.333 152.82 341.333 341.333s-152.82 341.333-341.333 341.333v0c-188.513 0-341.333-152.82-341.333-341.333s152.82-341.333 341.333-341.333v0zM426.667 170.667c-141.385 0-256 114.615-256 256s114.615 256 256 256v0c141.385 0 256-114.615 256-256s-114.615-256-256-256v0z">
+                            </path>
+                        </svg>
+
+                        <span class="search-text">
+                            SEARCH
+                        </span>
+
+                        <svg fill="#34A8CA" width="15" height="15" viewBox="0 0 1024 1024" class="">
+                            <path
+                                d="M222.080 350.080c8.687-8.689 20.688-14.063 33.945-14.063 10.737 0 20.65 3.525 28.646 9.482l-0.127-0.091 5.376 4.672 222.080 222.016 222.080-222.080c8.683-8.667 20.67-14.026 33.908-14.026 10.753 0 20.68 3.536 28.682 9.508l-0.126-0.090 5.376 4.672c8.689 8.687 14.063 20.688 14.063 33.945 0 10.737-3.525 20.65-9.482 28.646l0.091-0.127-4.672 5.376-256 256c-8.687 8.689-20.688 14.063-33.945 14.063-10.737 0-20.65-3.525-28.646-9.482l0.127 0.091-5.376-4.672-256-256c-8.674-8.684-14.038-20.676-14.038-33.92s5.364-25.236 14.038-33.921l-0.001 0.001z">
+                            </path>
+                        </svg>
+                    </div>
+                    <a class="top-menu-item">HOW IT WORKS</a>
+
+                </div>
+
+            </nav>
+
+
+
+
         </div>
+
+
+
+
 
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
@@ -24,16 +62,16 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarContent">
-                    
+
                     <form class="d-flex">
-                        <input class="form-control me-2"  placeholder="Search..."
+                        <input class="form-control me-2" placeholder="Search..."
                             style="text-align:center; border-radius: 6px;">
                         <img id="logo-image" src="mag-glass.png" alt="Logo Picture">
                     </form>
 
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="#"><b>How it Works</b></a>
+
                         </li>
                         <div class="vertical-line"></div>
                         <li class="nav-item">
@@ -95,27 +133,27 @@
                 <option>Social Media</option>
             </select>
         </div>
-        
+
     </div>
 
 
     <section class="details">
 
-    <div class="card-container">
-        <div class="card left-card">
-          <h2>Make bright ideas happen.</h2>
-          <p>Access global talent on the freelancer website trusted by over 1 million businesses worldwide.</p>
-          <br><br>
-          <input class="form-control me-2" placeholder="Try Searching Something..."
-                            style="text-align: center; border-radius: 6px;">
+        <div class="card-container">
+            <div class="card left-card">
+                <h2>Make bright ideas happen.</h2>
+                <p>Access global talent on the freelancer website trusted by over 1 million businesses worldwide.</p>
+                <br><br>
+                <input class="form-control me-2" placeholder="Try Searching Something..."
+                    style="text-align: center; border-radius: 6px;">
+            </div>
+            <div class="card right-card">
+                <img src="project.png" alt="Big Image">
+                <img src="profile.png" alt="Profile Picture" class="profile-pic">
+            </div>
         </div>
-        <div class="card right-card">
-          <img src="project.png" alt="Big Image">
-          <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
-        </div>
-    </div>
 
-    
+
     </section>
 </body>
 
